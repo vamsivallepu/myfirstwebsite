@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="icon" type="image/jpeg" href=url("https://drive.google.com/uc?id=152XY-n5hXz6tBN5OApvCMCBrhVsZve7a") style="background-position:center;">
+        <meta name="description" content="Quick, free, online unit converter that converts common units of measurement. The site makes conversion of units easier online." >
+
+    <meta name="keywords" content="unit converter, unit conversion, online unit conversion, unit converters, convert it now, length ,temperature, mass, area ,time ,online unit converter">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Vallepu Vamsi Krishna">
+    </head>
+    <body>
+    <h1>Convert It Now</h1>
+    <nav>
+        <button onclick="length()" class="nav">Length</button>
+        <button onclick="temperature()" class="nav">Temperature</button>
+        <button onclick="area()" class="nav">Area</button>
+        <button onclick="mass()" class="nav">Mass</button>
+        <button onclick="time()" class="nav">Time</button>
+    </nav>
+    <div id="length">
+    <h2 class="length">Length Converter</h2>
+     <input maxlength="12" type="tel" id="input" class="box">
+        <select id="from" class="from">
+            <option value="0">FROM</option>
+            <option value="centimetres">centimeters</option>
+            <option value="millimetres">millimetres</option>
+            <option value="inches">inches</option>
+            <option value="metres">metres</option>
+            <option value="nanometres">Nanometres</option>
+            <option value="micrometres">Micrometres</option>
+            <option value="kilometres">Kilometres</option> 
+            <option value="miles">Miles</option>
+            <option value="foot">Foot</option>
+        </select>
+        <p id="output">&emsp;&emsp;output&emsp;&emsp;</p>
+    <select id="to" class="to">
+        <option value=0>TO</option>
+        <option value="centimetres">centimetres</option>
+        <option value="millimetres">millimetres</option>
+        <option value="inches">inches</option>
+        <option value="metres">metres</option>
+        <option value="nanometres">Nanometres</option>
+        <option value="micrometres">Micrometres</option>
+        <option value="kilometres">Kilometres</option> 
+        <option value="miles">Miles</option>
+        <option value="foot">Foot</option>
+    </select>
+    <br>
+    <button onclick="convert()" class="button2" id="button">Convert</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="temperature">
+    <h2>Temperature Converter</h2>
+    <input type="tel" maxlength="12" id="input2" class="box">
+    <select id="from2" class="from">
+      <option value="0">From</option>
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+      <option value="kelvin">Kelvin</option>
+    </select>
+    <p id="output2">&emsp;&emsp;output&emsp;&emsp;</p>
+    <select id="to2" class="to">
+      <option value="0">To</option>
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+      <option value="kelvin">Kelvin</option>
+    </select>
+    <br>
+    <button onclick="convert2()" class="button2" id="button">Convert</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="area">
+    <h2>Area Converter</h2>
+    <input type="tel" maxlength="12" id="input3" class="box">
+<select id="from3" class="from">
+    <option value="0">From</option>
+    <option value="kilometres">Square Kilometres</option>
+    <option value="metres">Square Meters</option>
+    <option value="foot">Square Foot</option>
+    <option value="inches">Square Inch</option>
+    <option value="hectare">hectare</option>
+    <option value="acre">Acre</option>
+</select>
+    <p id="output3">&emsp;&emsp;output&emsp;&emsp;</p>
+    <select id="to3" class="to">
+    <option value="to3">To</option>
+    <option value="kilometres">Square Kilometres</option>
+     <option value="metres">Square Meters</option>
+    <option value="foot">Square Foot</option>
+    <option value="inches">Square Inch</option>
+    <option value="hectare">hectare</option>
+    <option value="acre">Acre</option>
+</select>
+    <br>
+    <button onclick="convert3()" class="button2" id="button">Convert</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="mass">
+    <h2>Mass Converter</h2>
+    <input type="tel" maxlength="12" id="input4" class="box">
+    <select id="from4" class="from">
+        <option value="0">From</option>
+        <option value="kilogram">Kilogram</option>
+        <option value="gram">Gram</option>
+        <option value="milligram">Milligram</option>
+        <option value="microgram">Microgram</option>
+        <option value="tonn">Tonn</option>
+        <option value="pound">Pound</option>
+        <option value="ounce">Ounce</option>
+    </select>
+    <p id="output4">&emsp;&emsp;output&emsp;&emsp;</p>
+
+    <select id="to4" class="to">
+        <option value="0">To</option>
+        <option value="kilogram">Kilogram</option>
+        <option value="gram">Gram</option>
+        <option value="milligram">Milligram</option>
+        <option value="microgram">Microgram</option>
+        <option value="tonn">Tonn</option>
+        <option value="pound">Pound</option>
+        <option value="ounce">Ounce</option>
+    </select>
+    <br>
+    <button onclick="convert4()" class="button2" id="button">Convert</button>
+    </div>
+     <br>
+     <br>
+     <br>
+     <div id="time">
+     <h2>Time Conveter</h2>
+     <input type="tel" maxlength="12" id="input5" class="box">
+     <select id="from5" class="from">
+         <option value="0">From</option>
+         <option value="nanosecond">Nanosecond</option>
+         <option value="microsecond">Microsecond</option>
+         <option value="millisecond">Millisecond</option>
+         <option value="second">Second</option>
+         <option value="minute">Minute</option>
+         <option value="hour">Hour</option>
+         <option value="day">Day</option>
+         <option value="week">Week</option>
+         <option value="month">Month</option>
+         <option value="year">Year</option>
+         <option value="decade">Decade</option>
+         <option value="century">Century</option>
+     </select>
+     <p id="output5">&emsp;&emsp;output&emsp;&emsp;</p>
+     <select id="to5" class="to">
+         <option value="0">From</option>
+         <option value="nanosecond">Nanosecond</option>
+         <option value="microsecond">Microsecond</option>
+         <option value="millisecond">Millisecond</option>
+         <option value="second">Second</option>
+         <option value="minute">Minute</option>
+         <option value="hour">Hour</option>
+         <option value="day">Day</option>
+         <option value="week">Week</option>
+         <option value="month">Month</option>
+         <option value="year">Year</option>
+         <option value="decade">Decade</option>
+         <option value="century">Century</option>
+     </select>
+     <br>
+     <button onclick="convert5()" class="button2" id="button">Convert</button>
+     </div>
+</body>
+</html>
